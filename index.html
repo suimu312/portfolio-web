@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>zzjiang的前端网页作品集</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <!-- 顶部Hero区 -->
+    <section class="hero">
+        <div class="hero-inner">
+            <span class="hero-dot"></span>
+            <h1>zzjiang的前端网页作品集</h1>
+            <p class="hero-sub">
+                这是我的前端课程作品集，展示三个课程项目：Quiz Time、Register Form 和 Recipe Finder。
+            </p>
+            <p class="hero-note"></p>
+        </div>
+    </section>
+
+    <!-- 项目展示区，保留，删掉整个how‑it‑works部分 -->
+    <section id="projects" class="projects">
+        <div class="projects-inner">
+            <h2>My Projects</h2>
+
+            <div id="meals" class="projects-grid">
+                <div class="project-card" data-url="https://quiz-game-suimu312.vercel.app/">
+                    <img src="img/quiztime.png" alt="Quiz Time" />
+                    <div class="project-info">
+                        <h3>Quiz Time</h3>
+                        <p>一个基于 JavaScript 的问答小游戏，支持题目展示、答案判断和分数统计。</p>
+                        <span class="project-tag">Quiz</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-url="https://register-web-rho.vercel.app/">
+                    <img src="img/register.png" alt="Register Form" />
+                    <div class="project-info">
+                        <h3>Register Form</h3>
+                        <p>一个带有表单验证的注册页面，包含输入检查、提示信息与提交反馈。</p>
+                        <span class="project-tag">Form</span>
+                    </div>
+                </div>
+
+                <div class="project-card" data-url="https://menu-searcher-green.vercel.app/">
+                    <img src="img/recipe.png" alt="Recipe Finder" />
+                    <div class="project-info">
+                        <h3>Recipe Finder</h3>
+                        <p>一个菜单搜索网页，可以根据关键词查找菜品信息，并展示项目截图。</p>
+                        <span class="project-tag">Search</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+/* 全局变量定义 */
+:root {
+    --primary-color:#d9534f;
+    --primary-color-dark:#c9302c;
+    --primary-color-light:#fdf3f3;
+    --background-light:#f8f4ec;
+    --background:#ffffff;
+    --text-dark:#222222;
+    --text-light:#555555;
+    --border-color:#dddddd;
+    --error-color:#d9534f;
+    --card-bg:#ffffff;
+    --shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* 全局重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background-color: var(--background-light);
+    color:var(--text-dark);
+    line-height: 1.6;
+}
+.container {
+    width:100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+h1 {
+    font-size: 2.2rem;
+    color:var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+header p {
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+/* 卡片容器，3张卡片并排，自动适配 */
+.meals-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+}
+.meal {
+    background:var(--card-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow:var(--shadow);
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.meal:hover {
+    transform: translateY(-6px);
+}
+/* 三张图片大小一模一样 */
+.meal img {
+    width: 100%;
+    height:220px;
+    object-fit: cover;
+}
+.meal-info {
+    padding: 1rem;
+}
+.meal-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+    color: var(--text-dark);
+}
+.meal-category {
+    color: var(--primary-color);
+    font-weight: 500;
+}
